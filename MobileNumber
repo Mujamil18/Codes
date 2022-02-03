@@ -1,0 +1,6 @@
+public class MobileNumber {
+    public static void main(String[] args){
+        long mobile_num = 9876543210L;
+        System.out.println("Mobile Number is " + mobile_num);
+    }
+}
