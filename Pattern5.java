@@ -3,7 +3,7 @@ public class Pattern5 {
         int n=9, i, j, k;
         for(i=n; i>=1; i--)
         {
-            for(j=1; j<i; j++)
+            for(j=1; j<i*2-1; j++)
             {
                 System.out.print(" ");
             }
@@ -11,9 +11,9 @@ public class Pattern5 {
             {
                 System.out.print(k+ " ");
             }
-            for(j=i+1;j<n; j++)
+            for(j=n-1;j>=i; j--)
             {
-                System.out.print(i+ " ");
+                System.out.print(j+ " ");
             }
             System.out.println();
         }
