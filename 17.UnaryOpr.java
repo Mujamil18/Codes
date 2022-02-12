@@ -7,6 +7,9 @@ public class UnaryOpr {
         System.out.println(a);
         a= 10 - a;
         System.out.println(a);
+        System.out.println("Unary Plus Operator");
+        a= +a;
+        System.out.println(a);
         System.out.println("Post Increment and Pre Increment");
         a++;
         System.out.println(a);
@@ -17,7 +20,13 @@ public class UnaryOpr {
         System.out.println(a);
         a = --a + 1;
         System.out.println(a);
-        
+        System.out.println("Complement");
+        a = ~ a;
+        System.out.println(a);
+        System.out.println("NOT Operator");
+        boolean flag= false;
+        System.out.println(flag);
+        System.out.println(!flag);
 
     }
 }
