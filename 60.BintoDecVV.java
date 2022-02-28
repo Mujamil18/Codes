@@ -2,6 +2,8 @@ import java.util.Scanner;
 public class BintoDecVV {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        
+        //BINARY TO DECIMAL
        /*int i = 0;
         long rem, dec = 0;
         System.out.println("Binary to Decimal");
@@ -10,11 +12,12 @@ public class BintoDecVV {
 
         while (bin > 0) {
             rem = bin % 10;
-            dec += last * Math.pow(2, i++);
+            dec += rem * Math.pow(2, i++);
             bin = bin / 10;
         }
         System.out.print("The Decimal number is " + dec); */
-
+        
+        //DECIMAL TO BINARY
         System.out.println("Decimal to Binary");
         System.out.println("Enter a Decimal number");
         int dec= sc.nextInt();
