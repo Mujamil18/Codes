@@ -1,3 +1,4 @@
+//Find the difference by outputting the characters that are not present in the one but in the other word.
 import java.util.Scanner;
 
 public class TwoStrings
