@@ -9,7 +9,7 @@ public class PhnNumValidation
         Scanner in= new Scanner(System.in);
         System.out.println("Enter a Phone Number");
       String phoneNumber= in.nextLine();
-      Matcher num= Pattern.compile("[+-0123456789]").matcher(phoneNumber);
+      Matcher num= Pattern.compile("^[+0]{0,2}(91)?[0-9]{10}$").matcher(phoneNumber);
       if(num.find())
       {
           System.out.println("Valid Phone Number");
@@ -19,4 +19,6 @@ public class PhnNumValidation
           System.out.println("Invalid Phone Number");
       }
     }
+
 }
+
