@@ -1,0 +1,262 @@
+*NOTE: Don't use IDE, Online Compiler, etc. Do it only with paper and pen
+and refer the outputs.
+
+PROGRAM 1:
+void main() 
+{
+  int a[][]= {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}, i, j;
+  for(i=0; i<3; i=i+1)
+  {
+      for(j=0; j<3; j=j+1)
+      {
+          if(i%2 == 0 && j%2 ==0)
+          {
+              a[i][j] = a[i][j] +1;
+          }
+      }
+  }
+  for(i=0; i<2; i=i+1)
+  {
+      for(j=0; j<2; j=j+1)
+      {
+          printf("%d," , a[i][j]);
+      }
+  }
+
+
+PROGRAM 2:
+void main() 
+{
+  func(X); // if X=4 , then the output is 1,2,3,4,
+}
+void func(int n)
+{
+    if(n>0)
+    {
+       func(n-1);
+       printf("%d,", n);
+    }
+}
+
+
+
+PROGRAM 3:
+void main() 
+{
+  int i, j;
+  for(i=0; i<2; i=i+1)
+  {
+      for(j=0; j<=i; j=j+1)
+      {
+          printf("%d ", j);
+          if(j>=1)
+          {
+              break;
+          }
+      }
+      printf("%d ", i);
+  }
+
+
+
+PROGRAM 4:
+void main() 
+{
+  int a=4, b=8;
+  while(a != b)
+  {
+      if(a >= (b-1))
+      {
+          Statement; //a= a+b;
+      }
+      else
+      {
+          Statement; //b= b-a;
+      }
+  }
+  printf("%d ", a);
+}
+
+
+
+PROGRAM 5:
+void main() 
+{
+ int arr[5] = {5, 3, 7, 9, 1};
+ int c= arr[0], i=1;
+ do
+ {
+     if(arr[i] > c)
+     {
+         c= arr[i];
+     }
+     i=i+1;
+ }while(i<5);
+ printf("%d", c);
+}
+
+
+
+PROGRAM 6:
+void main() 
+{
+ int c=2, i, j,n=1;
+ for(i=1; i<=c; i=i+1)
+ {
+     for(j=1; j<=i; j=j+1)
+     {
+       printf("%d ", n);
+       if(n%2 == 0)
+       {
+           n= n+1;
+       }
+       else
+       {
+           n= n+3;
+       }
+     }
+ }
+}
+
+
+
+PROGRAM 7:
+void main() 
+{
+ int i, j;
+ for(i=2; i>=1; i=i-1)
+ {
+     for(j=i; j>=1; j=j-1)
+     {
+         printf("* ");
+     }
+     printf("$");
+ }
+}
+
+
+
+PROGRAM 8:
+void main()
+{
+   int a[2][2] = {{2, 3}, {4, 5}};
+   for(int i=0; i<2 ; i=i+1)
+   {
+       for(int j=0; j<2; j=j+1)
+       {
+           printf("%d# ", a[j][i]);
+       }
+   }
+}
+
+
+PROGRAM 9:
+
+#include <stdio.h>
+
+int sum(int n)
+{
+    if(n<=0)
+    {
+        return 0;
+    }
+    return n+ sum(n-1);
+}
+int main()
+{
+    int n=4;
+    printf("%d", sum(n));
+    return 0;
+}
+
+
+PROGRAM 10:
+int pairSumSequence(int n)
+{
+    int sum=0;
+    for(int i=0; i<n; i++)
+    {
+        sum += pairSum(i, i+1);
+    }
+    return sum;
+}
+int pairSum(int a, int b)
+{
+    return a+b;
+}
+int main()
+{
+    int n=5;
+    printf("%d" , pairSumSequence(n));
+    return 0;
+}
+
+PROGRAM 11:
+
+public  static void main(String[] args)
+{
+  int x, y;
+  x = 10;
+  y = 100;
+  if(x == 10)
+  {
+    y = 20;
+    x = y * 2;
+  }
+  System.out.println("x = " + x + "y = " + y);
+}
+
+PROGRAM 12:
+
+int main() 
+{
+    int n=4;
+    printf("%d" , f(4));
+    return 0;
+}
+int f(int n)
+{
+    if(n<=1){
+    return 1;}
+return f(n-1) + f(n-1);
+}
+
+
+
+OUTPUT 1:
+error: array type has incomplete element type 'int[]'
+    6 |   int a[][]= {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}, i, j;
+      |       ^
+
+OUTPUT 2: 
+1,2,3,4,
+
+OUTPUT 3: 
+0 0 0 1 1
+
+OUTPUT 4: 
+4
+
+OUTPUT 5: 
+9
+
+OUTPUT 6:
+1 4 5
+
+OUTPUT 7:
+* * $* $
+
+OUTPUT 8: 
+2# 4# 3# 5# 
+
+OUTPUT 9:
+10
+
+OUTPUT 10:
+25
+
+OUTPUT 11:
+x = 40 y = 100
+
+OUTPUT 12:
+8
