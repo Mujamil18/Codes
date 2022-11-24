@@ -121,6 +121,20 @@ void main()
 
 
 PROGRAM 7:
+
+Java:
+public class Demo {
+	public static void main(String[] args) {
+		for(int i = 2; i >= 1; i = i - 1) {
+			for(int j = i; j >= 1; j = j - 1) {
+				System.out.print("* ");
+			}
+			System.out.print("$");
+		}
+	}
+}
+
+C:
 void main() 
 {
  int i, j;
